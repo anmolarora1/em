@@ -15,7 +15,7 @@ import {
   rootedContextOf,
   unroot,
 } from '../util.js'
-import { equalArrays } from './equalArrays.js'
+import { equalArrays } from './equalArrays'
 
 import {
   getContexts,
