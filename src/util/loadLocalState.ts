@@ -1,3 +1,6 @@
+//@ts-nocheck
+
+
 import { store } from '../store'
 import { migrate } from '../migrations/index'
 import { getContextIndex, getHelpers, getThoughtIndex } from '../db'

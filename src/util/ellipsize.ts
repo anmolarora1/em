@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import { THOUGHT_ELLIPSIZED_CHARS } from '../constants'
 
 /** Return a string truncated with an ellipsis at a given limit n */

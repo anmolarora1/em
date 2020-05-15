@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import { REGEXP_HTML } from '../constants'
 
 // checks if string contains html elements

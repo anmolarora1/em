@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import { clientId } from '../browser'
 import { store } from '../store'
 

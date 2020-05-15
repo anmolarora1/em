@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import { store } from '../store'
 import alert from '../action-creators/alert'
 

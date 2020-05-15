@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 export const modalCleanup = () => {
   const modalContainer = document.querySelector('.modal-container')
   if (modalContainer) {

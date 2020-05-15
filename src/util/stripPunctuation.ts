@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 const regexpPunctuation = /[;:.?!\-—,'"]/gi
 
 export const stripPunctuation = text => text

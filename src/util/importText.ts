@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import * as htmlparser from 'htmlparser2'
 import { parse } from 'jex-block-parser'
 import he from 'he'

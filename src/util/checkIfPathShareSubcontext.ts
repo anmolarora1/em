@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import { equalThoughtRanked } from '../util'
 
 export const checkIfPathShareSubcontext = (rankedThoughtsA, rankedThoughtsB) => {

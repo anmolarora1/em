@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 /** Adds commas to a number */
 // TODO: Localize
 export const formatNumber = n => {

@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import { REGEXP_URL } from '../constants'
 
 // checks if string contains URL

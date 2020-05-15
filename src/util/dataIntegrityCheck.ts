@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import { store } from '../store'
 import _ from 'lodash'
 
@@ -51,6 +53,7 @@ export const dataIntegrityCheck = path => {
       },
       forceRender: true
     })
+
     return
   }
 

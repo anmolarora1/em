@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import urlDataSource from './urlDataSource'
 
 /* Returns true if the document can be edited.
