@@ -70,8 +70,11 @@
 						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.comparethought.html#starts_with_emoji_regex" class="tsd-kind-icon">STARTS_<wbr>WITH_<wbr>EMOJI_<wbr>REGEX</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="util.comparethought.html#comparereasonable" class="tsd-kind-icon">compare<wbr>Reasonable</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.comparethought.html#comparereasonabletext" class="tsd-kind-icon">compare<wbr>Reasonable<wbr>Text</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="util.comparethought.html#comparethoughtdescending" class="tsd-kind-icon">compare<wbr>Thought<wbr>Descending</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.comparethought.html#regexignoredprefixes" class="tsd-kind-icon">regex<wbr>Ignored<wbr>Prefixes</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.comparethought.html#regexpunctuation" class="tsd-kind-icon">regex<wbr>Punctuation</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.comparethought.html#regexshortdatewithdash" class="tsd-kind-icon">regex<wbr>Short<wbr>Date<wbr>With<wbr>Dash</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.comparethought.html#regexshortdatewithslash" class="tsd-kind-icon">regex<wbr>Short<wbr>Date<wbr>With<wbr>Slash</a></li>
@@ -91,8 +94,11 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="util.comparethought.html#comparestringswithemoji" class="tsd-kind-icon">compare<wbr>Strings<wbr>With<wbr>Emoji</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="util.comparethought.html#comparethought" class="tsd-kind-icon">compare<wbr>Thought</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="util.comparethought.html#makeorderedcomparator" class="tsd-kind-icon">make<wbr>Ordered<wbr>Comparator</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="util.comparethought.html#makereasonable" class="tsd-kind-icon">make<wbr>Reasonable</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="util.comparethought.html#parsedate" class="tsd-kind-icon">parse<wbr>Date</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="util.comparethought.html#removeemojisandspaces" class="tsd-kind-icon">remove<wbr>Emojis<wbr>And<wbr>Spaces</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="util.comparethought.html#removeignoredprefixes" class="tsd-kind-icon">remove<wbr>Ignored<wbr>Prefixes</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="util.comparethought.html#reverse" class="tsd-kind-icon">reverse</a></li>
 							</ul>
 						</section>
 					</div>
@@ -100,13 +106,23 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="starts_with_emoji_regex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> STARTS_<wbr>WITH_<wbr>EMOJI_<wbr>REGEX</h3>
+					<div class="tsd-signature tsd-kind-icon">STARTS_<wbr>WITH_<wbr>EMOJI_<wbr>REGEX<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = new RegExp(&#x60;^${EMOJI_REGEX.source}&#x60;)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/util/compareThought.ts#L5">src/util/compareThought.ts:5</a></li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="comparereasonable" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> compare<wbr>Reasonable</h3>
-					<div class="tsd-signature tsd-kind-icon">compare<wbr>Reasonable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_types_.html#comparatorvalue" class="tsd-signature-type">ComparatorValue</a><span class="tsd-signature-symbol"> = makeOrderedComparator&lt;string&gt;([compareEmpty,comparePunctuationAndOther,compareStringsWithEmoji,(a, b) &#x3D;&gt; compareReasonableText(removeEmojisAndSpaces(a), removeEmojisAndSpaces(b)),])</span></div>
+					<div class="tsd-signature tsd-kind-icon">compare<wbr>Reasonable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_types.comparatorvalue.html" class="tsd-signature-type">ComparatorValue</a><span class="tsd-signature-symbol"> = makeOrderedComparator&lt;string&gt;([compareEmpty,comparePunctuationAndOther,compareStringsWithEmoji,(a, b) &#x3D;&gt; compareReasonableText(makeReasonable(a), makeReasonable(b)),])</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/anmolarora1/em/blob/6c2acf0/src/util/compareThought.ts#L118">src/util/compareThought.ts:118</a></li>
+							<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/util/compareThought.ts#L121">src/util/compareThought.ts:121</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -125,7 +141,7 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-signature">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_.html#comparatorvalue" class="tsd-signature-type">ComparatorValue</a></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.comparatorvalue.html" class="tsd-signature-type">ComparatorValue</a></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
@@ -138,7 +154,7 @@
 												<h5>b: <span class="tsd-signature-type">T</span></h5>
 											</li>
 										</ul>
-										<h4 class="tsd-returns-title">Returns <a href="_types_.html#comparatorvalue" class="tsd-signature-type">ComparatorValue</a></h4>
+										<h4 class="tsd-returns-title">Returns <a href="_types.comparatorvalue.html" class="tsd-signature-type">ComparatorValue</a></h4>
 									</li>
 								</ul>
 							</li>
@@ -148,10 +164,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 					<a name="comparereasonabletext" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> compare<wbr>Reasonable<wbr>Text</h3>
-					<div class="tsd-signature tsd-kind-icon">compare<wbr>Reasonable<wbr>Text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_types_.html#comparatorvalue" class="tsd-signature-type">ComparatorValue</a><span class="tsd-signature-symbol"> = makeOrderedComparator&lt;string&gt;([compareNumberAndOther,compareNumbers,compareDateAndOther,compareDateStrings,compareLowercase,])</span></div>
+					<div class="tsd-signature tsd-kind-icon">compare<wbr>Reasonable<wbr>Text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_types.comparatorvalue.html" class="tsd-signature-type">ComparatorValue</a><span class="tsd-signature-symbol"> = makeOrderedComparator&lt;string&gt;([compareNumberAndOther,compareNumbers,compareDateAndOther,compareDateStrings,compareLowercase,])</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/anmolarora1/em/blob/6c2acf0/src/util/compareThought.ts#L103">src/util/compareThought.ts:103</a></li>
+							<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/util/compareThought.ts#L106">src/util/compareThought.ts:106</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -169,7 +185,7 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-signature">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_.html#comparatorvalue" class="tsd-signature-type">ComparatorValue</a></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.comparatorvalue.html" class="tsd-signature-type">ComparatorValue</a></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
@@ -182,12 +198,37 @@
 												<h5>b: <span class="tsd-signature-type">T</span></h5>
 											</li>
 										</ul>
-										<h4 class="tsd-returns-title">Returns <a href="_types_.html#comparatorvalue" class="tsd-signature-type">ComparatorValue</a></h4>
+										<h4 class="tsd-returns-title">Returns <a href="_types.comparatorvalue.html" class="tsd-signature-type">ComparatorValue</a></h4>
 									</li>
 								</ul>
 							</li>
 						</ul>
 					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="comparethoughtdescending" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> compare<wbr>Thought<wbr>Descending</h3>
+					<div class="tsd-signature tsd-kind-icon">compare<wbr>Thought<wbr>Descending<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> = reverse(compareThought)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/util/compareThought.ts#L138">src/util/compareThought.ts:138</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A comparator that sorts in descending order.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="regexignoredprefixes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> regex<wbr>Ignored<wbr>Prefixes</h3>
+					<div class="tsd-signature tsd-kind-icon">regex<wbr>Ignored<wbr>Prefixes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = new RegExp(&#x60;^(${IGNORED_PREFIXES.join(&#x27;|&#x27;)})(.*)&#x60;, &#x27;gm&#x27;)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/util/compareThought.ts#L10">src/util/compareThought.ts:10</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 					<a name="regexpunctuation" class="tsd-anchor"></a>
@@ -195,7 +236,7 @@
 					<div class="tsd-signature tsd-kind-icon">regex<wbr>Punctuation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /^[!@#$%^&amp;*()\-_&#x3D;+[\]{};:&#x27;&quot;&lt;&gt;.,?\\/].*/</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/anmolarora1/em/blob/6c2acf0/src/util/compareThought.ts#L5">src/util/compareThought.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/util/compareThought.ts#L7">src/util/compareThought.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -205,7 +246,7 @@
 					<div class="tsd-signature tsd-kind-icon">regex<wbr>Short<wbr>Date<wbr>With<wbr>Dash<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /\d{1,2}-\d{1,2}/</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/anmolarora1/em/blob/6c2acf0/src/util/compareThought.ts#L6">src/util/compareThought.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/util/compareThought.ts#L8">src/util/compareThought.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -215,7 +256,7 @@
 					<div class="tsd-signature tsd-kind-icon">regex<wbr>Short<wbr>Date<wbr>With<wbr>Slash<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /\d{1,2}\/\d{1,2}/</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/anmolarora1/em/blob/6c2acf0/src/util/compareThought.ts#L7">src/util/compareThought.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/util/compareThought.ts#L9">src/util/compareThought.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -226,13 +267,13 @@
 					<a name="compare" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> compare</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">compare&lt;T&gt;<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_.html#comparatorvalue" class="tsd-signature-type">ComparatorValue</a></li>
+						<li class="tsd-signature tsd-kind-icon">compare&lt;T&gt;<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.comparatorvalue.html" class="tsd-signature-type">ComparatorValue</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/6c2acf0/src/util/compareThought.ts#L23">src/util/compareThought.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/util/compareThought.ts#L36">src/util/compareThought.ts:36</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -255,7 +296,7 @@
 									<h5>b: <span class="tsd-signature-type">T</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_types_.html#comparatorvalue" class="tsd-signature-type">ComparatorValue</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_types.comparatorvalue.html" class="tsd-signature-type">ComparatorValue</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -263,13 +304,13 @@
 					<a name="comparedateandother" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> compare<wbr>Date<wbr>And<wbr>Other</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">compare<wbr>Date<wbr>And<wbr>Other<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_.html#comparatorvalue" class="tsd-signature-type">ComparatorValue</a></li>
+						<li class="tsd-signature tsd-kind-icon">compare<wbr>Date<wbr>And<wbr>Other<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.comparatorvalue.html" class="tsd-signature-type">ComparatorValue</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/6c2acf0/src/util/compareThought.ts#L78">src/util/compareThought.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/util/compareThought.ts#L82">src/util/compareThought.ts:82</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -286,7 +327,7 @@
 									<h5>b: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_types_.html#comparatorvalue" class="tsd-signature-type">ComparatorValue</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_types.comparatorvalue.html" class="tsd-signature-type">ComparatorValue</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -294,13 +335,13 @@
 					<a name="comparedatestrings" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> compare<wbr>Date<wbr>Strings</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">compare<wbr>Date<wbr>Strings<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_.html#comparatorvalue" class="tsd-signature-type">ComparatorValue</a></li>
+						<li class="tsd-signature tsd-kind-icon">compare<wbr>Date<wbr>Strings<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.comparatorvalue.html" class="tsd-signature-type">ComparatorValue</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/6c2acf0/src/util/compareThought.ts#L73">src/util/compareThought.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/util/compareThought.ts#L77">src/util/compareThought.ts:77</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -317,7 +358,7 @@
 									<h5>b: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_types_.html#comparatorvalue" class="tsd-signature-type">ComparatorValue</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_types.comparatorvalue.html" class="tsd-signature-type">ComparatorValue</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -325,13 +366,13 @@
 					<a name="compareempty" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> compare<wbr>Empty</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">compare<wbr>Empty<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_.html#comparatorvalue" class="tsd-signature-type">ComparatorValue</a></li>
+						<li class="tsd-signature tsd-kind-icon">compare<wbr>Empty<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.comparatorvalue.html" class="tsd-signature-type">ComparatorValue</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/6c2acf0/src/util/compareThought.ts#L35">src/util/compareThought.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/util/compareThought.ts#L46">src/util/compareThought.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -348,7 +389,7 @@
 									<h5>b: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_types_.html#comparatorvalue" class="tsd-signature-type">ComparatorValue</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_types.comparatorvalue.html" class="tsd-signature-type">ComparatorValue</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -356,13 +397,13 @@
 					<a name="comparelowercase" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> compare<wbr>Lowercase</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">compare<wbr>Lowercase<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_.html#comparatorvalue" class="tsd-signature-type">ComparatorValue</a></li>
+						<li class="tsd-signature tsd-kind-icon">compare<wbr>Lowercase<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.comparatorvalue.html" class="tsd-signature-type">ComparatorValue</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/6c2acf0/src/util/compareThought.ts#L61">src/util/compareThought.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/util/compareThought.ts#L67">src/util/compareThought.ts:67</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -379,7 +420,7 @@
 									<h5>b: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_types_.html#comparatorvalue" class="tsd-signature-type">ComparatorValue</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_types.comparatorvalue.html" class="tsd-signature-type">ComparatorValue</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -387,13 +428,13 @@
 					<a name="comparenumberandother" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> compare<wbr>Number<wbr>And<wbr>Other</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">compare<wbr>Number<wbr>And<wbr>Other&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_.html#comparatorvalue" class="tsd-signature-type">ComparatorValue</a></li>
+						<li class="tsd-signature tsd-kind-icon">compare<wbr>Number<wbr>And<wbr>Other&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.comparatorvalue.html" class="tsd-signature-type">ComparatorValue</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/6c2acf0/src/util/compareThought.ts#L44">src/util/compareThought.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/util/compareThought.ts#L53">src/util/compareThought.ts:53</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -419,7 +460,7 @@
 									<h5>b: <span class="tsd-signature-type">U</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_types_.html#comparatorvalue" class="tsd-signature-type">ComparatorValue</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_types.comparatorvalue.html" class="tsd-signature-type">ComparatorValue</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -427,13 +468,13 @@
 					<a name="comparenumbers" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> compare<wbr>Numbers</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">compare<wbr>Numbers&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_.html#comparatorvalue" class="tsd-signature-type">ComparatorValue</a></li>
+						<li class="tsd-signature tsd-kind-icon">compare<wbr>Numbers&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.comparatorvalue.html" class="tsd-signature-type">ComparatorValue</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/6c2acf0/src/util/compareThought.ts#L53">src/util/compareThought.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/util/compareThought.ts#L60">src/util/compareThought.ts:60</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -459,7 +500,7 @@
 									<h5>b: <span class="tsd-signature-type">U</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_types_.html#comparatorvalue" class="tsd-signature-type">ComparatorValue</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_types.comparatorvalue.html" class="tsd-signature-type">ComparatorValue</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -467,13 +508,13 @@
 					<a name="comparepunctuationandother" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> compare<wbr>Punctuation<wbr>And<wbr>Other</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">compare<wbr>Punctuation<wbr>And<wbr>Other&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_.html#comparatorvalue" class="tsd-signature-type">ComparatorValue</a></li>
+						<li class="tsd-signature tsd-kind-icon">compare<wbr>Punctuation<wbr>And<wbr>Other&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.comparatorvalue.html" class="tsd-signature-type">ComparatorValue</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/6c2acf0/src/util/compareThought.ts#L64">src/util/compareThought.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/util/compareThought.ts#L70">src/util/compareThought.ts:70</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -499,7 +540,7 @@
 									<h5>b: <span class="tsd-signature-type">U</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_types_.html#comparatorvalue" class="tsd-signature-type">ComparatorValue</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_types.comparatorvalue.html" class="tsd-signature-type">ComparatorValue</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -507,13 +548,13 @@
 					<a name="comparestringswithemoji" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> compare<wbr>Strings<wbr>With<wbr>Emoji</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">compare<wbr>Strings<wbr>With<wbr>Emoji<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">0</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">-1</span></li>
+						<li class="tsd-signature tsd-kind-icon">compare<wbr>Strings<wbr>With<wbr>Emoji<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">-1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">0</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/6c2acf0/src/util/compareThought.ts#L26">src/util/compareThought.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/util/compareThought.ts#L39">src/util/compareThought.ts:39</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -530,7 +571,7 @@
 									<h5>b: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">0</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">-1</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">-1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">0</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -538,13 +579,13 @@
 					<a name="comparethought" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> compare<wbr>Thought</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">compare<wbr>Thought<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_.child.html" class="tsd-signature-type">Child</a>, b<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">0</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">-1</span></li>
+						<li class="tsd-signature tsd-kind-icon">compare<wbr>Thought<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a>, b<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">0</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">-1</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/6c2acf0/src/util/compareThought.ts#L126">src/util/compareThought.ts:126</a></li>
+									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/util/compareThought.ts#L135">src/util/compareThought.ts:135</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -555,10 +596,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>a: <a href="../interfaces/_types_.child.html" class="tsd-signature-type">Child</a></h5>
+									<h5>a: <a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a></h5>
 								</li>
 								<li>
-									<h5>b: <a href="../interfaces/_types_.child.html" class="tsd-signature-type">Child</a></h5>
+									<h5>b: <a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">0</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">-1</span></h4>
@@ -569,13 +610,13 @@
 					<a name="makeorderedcomparator" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> make<wbr>Ordered<wbr>Comparator</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">make<wbr>Ordered<wbr>Comparator&lt;T&gt;<span class="tsd-signature-symbol">(</span>comparators<span class="tsd-signature-symbol">: </span><a href="_types_.html#comparatorfunction" class="tsd-signature-type">ComparatorFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_.html#comparatorfunction" class="tsd-signature-type">ComparatorFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Ordered<wbr>Comparator&lt;T&gt;<span class="tsd-signature-symbol">(</span>comparators<span class="tsd-signature-symbol">: </span><a href="_types.comparatorfunction.html" class="tsd-signature-type">ComparatorFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.comparatorfunction.html" class="tsd-signature-type">ComparatorFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/6c2acf0/src/util/compareThought.ts#L87">src/util/compareThought.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/util/compareThought.ts#L89">src/util/compareThought.ts:89</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -592,10 +633,38 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>comparators: <a href="_types_.html#comparatorfunction" class="tsd-signature-type">ComparatorFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>comparators: <a href="_types.comparatorfunction.html" class="tsd-signature-type">ComparatorFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_types_.html#comparatorfunction" class="tsd-signature-type">ComparatorFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_types.comparatorfunction.html" class="tsd-signature-type">ComparatorFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="makereasonable" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> make<wbr>Reasonable</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Reasonable<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/util/compareThought.ts#L19">src/util/compareThought.ts:19</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Make comparator inputs reasonable.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>str: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -609,7 +678,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/6c2acf0/src/util/compareThought.ts#L13">src/util/compareThought.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/util/compareThought.ts#L24">src/util/compareThought.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -637,7 +706,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/6c2acf0/src/util/compareThought.ts#L10">src/util/compareThought.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/util/compareThought.ts#L13">src/util/compareThought.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -652,6 +721,68 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="removeignoredprefixes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> remove<wbr>Ignored<wbr>Prefixes</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Ignored<wbr>Prefixes<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/util/compareThought.ts#L16">src/util/compareThought.ts:16</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Remove ignored prefixes from comparator inputs.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>str: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+					<a name="reverse" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> reverse</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">reverse&lt;T&gt;<span class="tsd-signature-symbol">(</span>comparator<span class="tsd-signature-symbol">: </span><a href="_types.comparatorfunction.html" class="tsd-signature-type">ComparatorFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/util/compareThought.ts#L129">src/util/compareThought.ts:129</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get reverse of the given comparator.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>comparator: <a href="_types.comparatorfunction.html" class="tsd-signature-type">ComparatorFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -672,11 +803,20 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="util.comparethought.html#starts_with_emoji_regex" class="tsd-kind-icon">STARTS_<wbr>WITH_<wbr>EMOJI_<wbr>REGEX</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="util.comparethought.html#comparereasonable" class="tsd-kind-icon">compare<wbr>Reasonable</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="util.comparethought.html#comparereasonabletext" class="tsd-kind-icon">compare<wbr>Reasonable<wbr>Text</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="util.comparethought.html#comparethoughtdescending" class="tsd-kind-icon">compare<wbr>Thought<wbr>Descending</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="util.comparethought.html#regexignoredprefixes" class="tsd-kind-icon">regex<wbr>Ignored<wbr>Prefixes</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="util.comparethought.html#regexpunctuation" class="tsd-kind-icon">regex<wbr>Punctuation</a>
@@ -721,10 +861,19 @@
 						<a href="util.comparethought.html#makeorderedcomparator" class="tsd-kind-icon">make<wbr>Ordered<wbr>Comparator</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="util.comparethought.html#makereasonable" class="tsd-kind-icon">make<wbr>Reasonable</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="util.comparethought.html#parsedate" class="tsd-kind-icon">parse<wbr>Date</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="util.comparethought.html#removeemojisandspaces" class="tsd-kind-icon">remove<wbr>Emojis<wbr>And<wbr>Spaces</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="util.comparethought.html#removeignoredprefixes" class="tsd-kind-icon">remove<wbr>Ignored<wbr>Prefixes</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="util.comparethought.html#reverse" class="tsd-kind-icon">reverse</a>
 					</li>
 				</ul>
 			</nav>
@@ -742,7 +891,6 @@
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
-				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>

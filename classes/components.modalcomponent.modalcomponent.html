@@ -92,7 +92,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="tsd-signature-type">Component</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_.html#connected" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>
+						<span class="tsd-signature-type">Component</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types.connected.html" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">ModalComponent</span>
@@ -113,7 +113,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="components.modalcomponent.modalcomponent.html#close" class="tsd-kind-icon">close</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="components.modalcomponent.modalcomponent.html#animateandclose" class="tsd-kind-icon">animate<wbr>And<wbr>Close</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="components.modalcomponent.modalcomponent.html#context" class="tsd-kind-icon">context</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="components.modalcomponent.modalcomponent.html#escapelistener" class="tsd-kind-icon">escape<wbr>Listener</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="components.modalcomponent.modalcomponent.html#props" class="tsd-kind-icon">props</a></li>
@@ -129,6 +129,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="components.modalcomponent.modalcomponent.html#unsafe_componentwillmount" class="tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Mount</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="components.modalcomponent.modalcomponent.html#unsafe_componentwillreceiveprops" class="tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Receive<wbr>Props</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="components.modalcomponent.modalcomponent.html#unsafe_componentwillupdate" class="tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="components.modalcomponent.modalcomponent.html#close" class="tsd-kind-icon">close</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="components.modalcomponent.modalcomponent.html#complete" class="tsd-kind-icon">complete</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="components.modalcomponent.modalcomponent.html#componentdidcatch" class="tsd-kind-icon">component<wbr>Did<wbr>Catch</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="components.modalcomponent.modalcomponent.html#componentdidmount" class="tsd-kind-icon">component<wbr>Did<wbr>Mount</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="components.modalcomponent.modalcomponent.html#componentdidupdate" class="tsd-kind-icon">component<wbr>Did<wbr>Update</a></li>
@@ -136,6 +138,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="components.modalcomponent.modalcomponent.html#componentwillreceiveprops" class="tsd-kind-icon">component<wbr>Will<wbr>Receive<wbr>Props</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="components.modalcomponent.modalcomponent.html#componentwillunmount" class="tsd-kind-icon">component<wbr>Will<wbr>Unmount</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="components.modalcomponent.modalcomponent.html#componentwillupdate" class="tsd-kind-icon">component<wbr>Will<wbr>Update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="components.modalcomponent.modalcomponent.html#endtutorial" class="tsd-kind-icon">end<wbr>Tutorial</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="components.modalcomponent.modalcomponent.html#forceupdate" class="tsd-kind-icon">force<wbr>Update</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="components.modalcomponent.modalcomponent.html#getsnapshotbeforeupdate" class="tsd-kind-icon">get<wbr>Snapshot<wbr>Before<wbr>Update</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="components.modalcomponent.modalcomponent.html#render" class="tsd-kind-icon">render</a></li>
@@ -152,20 +155,20 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Modal<wbr>Component<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../modules/_types_.html#connected" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="components.modalcomponent.modalcomponent.html" class="tsd-signature-type">ModalComponent</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Modal<wbr>Component<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../modules/_types.connected.html" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="components.modalcomponent.modalcomponent.html" class="tsd-signature-type">ModalComponent</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides Component.__constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/6c2acf0/src/components/ModalComponent.tsx#L39">src/components/ModalComponent.tsx:39</a></li>
+									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/components/ModalComponent.tsx#L44">src/components/ModalComponent.tsx:44</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>props: <a href="../modules/_types_.html#connected" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>props: <a href="../modules/_types.connected.html" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="components.modalcomponent.modalcomponent.html" class="tsd-signature-type">ModalComponent</a></h4>
@@ -176,12 +179,12 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="close" class="tsd-anchor"></a>
-					<h3>close</h3>
-					<div class="tsd-signature tsd-kind-icon">close<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>duration<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></div>
+					<a name="animateandclose" class="tsd-anchor"></a>
+					<h3>animate<wbr>And<wbr>Close</h3>
+					<div class="tsd-signature tsd-kind-icon">animate<wbr>And<wbr>Close<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/anmolarora1/em/blob/6c2acf0/src/components/ModalComponent.tsx#L37">src/components/ModalComponent.tsx:37</a></li>
+							<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/components/ModalComponent.tsx#L42">src/components/ModalComponent.tsx:42</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -192,7 +195,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="components.modalcomponent.modalcomponent.html">ModalComponent</a>.<a href="components.modalcomponent.modalcomponent.html#context">context</a></p>
 						<ul>
-							<li>Defined in node_modules/@types/react/index.d.ts:473</li>
+							<li>Defined in node_modules/@types/react/index.d.ts:474</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -219,18 +222,18 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 					<div class="tsd-signature tsd-kind-icon">escape<wbr>Listener<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KeyboardEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/anmolarora1/em/blob/6c2acf0/src/components/ModalComponent.tsx#L38">src/components/ModalComponent.tsx:38</a></li>
+							<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/components/ModalComponent.tsx#L43">src/components/ModalComponent.tsx:43</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="props" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> props</h3>
-					<div class="tsd-signature tsd-kind-icon">props<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_.html#connected" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>children<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ReactNode</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">props<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types.connected.html" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>children<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ReactNode</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="components.modalcomponent.modalcomponent.html">ModalComponent</a>.<a href="components.modalcomponent.modalcomponent.html#props">props</a></p>
 						<ul>
-							<li>Defined in node_modules/@types/react/index.d.ts:498</li>
+							<li>Defined in node_modules/@types/react/index.d.ts:499</li>
 						</ul>
 					</aside>
 				</section>
@@ -240,7 +243,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 					<div class="tsd-signature tsd-kind-icon">ref<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/anmolarora1/em/blob/6c2acf0/src/components/ModalComponent.tsx#L39">src/components/ModalComponent.tsx:39</a></li>
+							<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/components/ModalComponent.tsx#L44">src/components/ModalComponent.tsx:44</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -251,7 +254,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="components.modalcomponent.modalcomponent.html">ModalComponent</a>.<a href="components.modalcomponent.modalcomponent.html#refs">refs</a></p>
 						<ul>
-							<li>Defined in node_modules/@types/react/index.d.ts:504</li>
+							<li>Defined in node_modules/@types/react/index.d.ts:505</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -277,18 +280,18 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="components.modalcomponent.modalcomponent.html">ModalComponent</a>.<a href="components.modalcomponent.modalcomponent.html#state">state</a></p>
 						<ul>
-							<li>Defined in node_modules/@types/react/index.d.ts:499</li>
+							<li>Defined in node_modules/@types/react/index.d.ts:500</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 					<a name="contexttype" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagOptional">Optional</span> context<wbr>Type</h3>
-					<div class="tsd-signature tsd-kind-icon">context<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../modules/_types_.html#context" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">context<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../modules/_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="components.modalcomponent.modalcomponent.html">ModalComponent</a>.<a href="components.modalcomponent.modalcomponent.html#contexttype">contextType</a></p>
 						<ul>
-							<li>Defined in node_modules/@types/react/index.d.ts:455</li>
+							<li>Defined in node_modules/@types/react/index.d.ts:456</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -327,7 +330,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="components.modalcomponent.modalcomponent.html">ModalComponent</a>.<a href="components.modalcomponent.modalcomponent.html#unsafe_componentwillmount">UNSAFE_componentWillMount</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/react/index.d.ts:711</li>
+									<li>Defined in node_modules/@types/react/index.d.ts:712</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -358,14 +361,14 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 					<a name="unsafe_componentwillreceiveprops" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> UNSAFE_<wbr>component<wbr>Will<wbr>Receive<wbr>Props</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Receive<wbr>Props<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_.html#connected" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, nextContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Receive<wbr>Props<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types.connected.html" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, nextContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="components.modalcomponent.modalcomponent.html">ModalComponent</a>.<a href="components.modalcomponent.modalcomponent.html#unsafe_componentwillreceiveprops">UNSAFE_componentWillReceiveProps</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/react/index.d.ts:743</li>
+									<li>Defined in node_modules/@types/react/index.d.ts:744</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -393,7 +396,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>nextProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_.html#connected" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>nextProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types.connected.html" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>nextContext: <span class="tsd-signature-type">any</span></h5>
@@ -407,14 +410,14 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 					<a name="unsafe_componentwillupdate" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> UNSAFE_<wbr>component<wbr>Will<wbr>Update</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Update<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_.html#connected" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, nextState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span>, nextContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Update<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types.connected.html" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, nextState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span>, nextContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="components.modalcomponent.modalcomponent.html">ModalComponent</a>.<a href="components.modalcomponent.modalcomponent.html#unsafe_componentwillupdate">UNSAFE_componentWillUpdate</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/react/index.d.ts:771</li>
+									<li>Defined in node_modules/@types/react/index.d.ts:772</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -440,7 +443,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>nextProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_.html#connected" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>nextProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types.connected.html" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>nextState: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h5>
@@ -449,6 +452,45 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 									<h5>nextContext: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="close" class="tsd-anchor"></a>
+					<h3>close</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">close<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/components/ModalComponent.tsx#L84">src/components/ModalComponent.tsx:84</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="complete" class="tsd-anchor"></a>
+					<h3>complete</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">complete<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/components/ModalComponent.tsx#L92">src/components/ModalComponent.tsx:92</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Dispatches a modalComplete action for the modal.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -464,7 +506,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="components.modalcomponent.modalcomponent.html">ModalComponent</a>.<a href="components.modalcomponent.modalcomponent.html#componentdidcatch">componentDidCatch</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/react/index.d.ts:640</li>
+									<li>Defined in node_modules/@types/react/index.d.ts:641</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -497,7 +539,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 							<aside class="tsd-sources">
 								<p>Overrides <a href="components.multigesture.multigesture.html">MultiGesture</a>.<a href="components.multigesture.multigesture.html#componentdidmount">componentDidMount</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/6c2acf0/src/components/ModalComponent.tsx#L46">src/components/ModalComponent.tsx:46</a></li>
+									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/components/ModalComponent.tsx#L51">src/components/ModalComponent.tsx:51</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -508,14 +550,14 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 					<a name="componentdidupdate" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> component<wbr>Did<wbr>Update</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">component<wbr>Did<wbr>Update<span class="tsd-signature-symbol">(</span>prevProps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_.html#connected" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, prevState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span>, snapshot<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">SS</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">component<wbr>Did<wbr>Update<span class="tsd-signature-symbol">(</span>prevProps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types.connected.html" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, prevState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span>, snapshot<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">SS</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="components.modalcomponent.modalcomponent.html">ModalComponent</a>.<a href="components.modalcomponent.modalcomponent.html#componentdidupdate">componentDidUpdate</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/react/index.d.ts:682</li>
+									<li>Defined in node_modules/@types/react/index.d.ts:683</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -527,7 +569,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>prevProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_.html#connected" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>prevProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types.connected.html" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>prevState: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h5>
@@ -551,7 +593,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="components.modalcomponent.modalcomponent.html">ModalComponent</a>.<a href="components.modalcomponent.modalcomponent.html#componentwillmount">componentWillMount</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/react/index.d.ts:697</li>
+									<li>Defined in node_modules/@types/react/index.d.ts:698</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -581,14 +623,14 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 					<a name="componentwillreceiveprops" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> component<wbr>Will<wbr>Receive<wbr>Props</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">component<wbr>Will<wbr>Receive<wbr>Props<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_.html#connected" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, nextContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">component<wbr>Will<wbr>Receive<wbr>Props<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types.connected.html" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, nextContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="components.modalcomponent.modalcomponent.html">ModalComponent</a>.<a href="components.modalcomponent.modalcomponent.html#componentwillreceiveprops">componentWillReceiveProps</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/react/index.d.ts:726</li>
+									<li>Defined in node_modules/@types/react/index.d.ts:727</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -615,7 +657,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>nextProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_.html#connected" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>nextProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types.connected.html" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>nextContext: <span class="tsd-signature-type">any</span></h5>
@@ -636,7 +678,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 							<aside class="tsd-sources">
 								<p>Overrides <a href="components.multigesture.multigesture.html">MultiGesture</a>.<a href="components.multigesture.multigesture.html#componentwillunmount">componentWillUnmount</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/6c2acf0/src/components/ModalComponent.tsx#L81">src/components/ModalComponent.tsx:81</a></li>
+									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/components/ModalComponent.tsx#L86">src/components/ModalComponent.tsx:86</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -647,14 +689,14 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 					<a name="componentwillupdate" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> component<wbr>Will<wbr>Update</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">component<wbr>Will<wbr>Update<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_.html#connected" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, nextState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span>, nextContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">component<wbr>Will<wbr>Update<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types.connected.html" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, nextState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span>, nextContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="components.modalcomponent.modalcomponent.html">ModalComponent</a>.<a href="components.modalcomponent.modalcomponent.html#componentwillupdate">componentWillUpdate</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/react/index.d.ts:756</li>
+									<li>Defined in node_modules/@types/react/index.d.ts:757</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -679,7 +721,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>nextProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_.html#connected" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>nextProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types.connected.html" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>nextState: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h5>
@@ -688,6 +730,28 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 									<h5>nextContext: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="endtutorial" class="tsd-anchor"></a>
+					<h3>end<wbr>Tutorial</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">end<wbr>Tutorial<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/components/ModalComponent.tsx#L95">src/components/ModalComponent.tsx:95</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Dispatches a tutorial action that ends the tutorial.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -703,7 +767,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="components.modalcomponent.modalcomponent.html">ModalComponent</a>.<a href="components.modalcomponent.modalcomponent.html#forceupdate">forceUpdate</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/react/index.d.ts:490</li>
+									<li>Defined in node_modules/@types/react/index.d.ts:491</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -720,14 +784,14 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 					<a name="getsnapshotbeforeupdate" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> get<wbr>Snapshot<wbr>Before<wbr>Update</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Snapshot<wbr>Before<wbr>Update<span class="tsd-signature-symbol">(</span>prevProps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_.html#connected" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, prevState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SS</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Snapshot<wbr>Before<wbr>Update<span class="tsd-signature-symbol">(</span>prevProps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types.connected.html" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, prevState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SS</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="components.modalcomponent.modalcomponent.html">ModalComponent</a>.<a href="components.modalcomponent.modalcomponent.html#getsnapshotbeforeupdate">getSnapshotBeforeUpdate</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/react/index.d.ts:676</li>
+									<li>Defined in node_modules/@types/react/index.d.ts:677</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -742,7 +806,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>prevProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_.html#connected" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>prevProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types.connected.html" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>prevState: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h5>
@@ -763,7 +827,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 							<aside class="tsd-sources">
 								<p>Overrides Component.render</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/6c2acf0/src/components/ModalComponent.tsx#L86">src/components/ModalComponent.tsx:86</a></li>
+									<li>Defined in <a href="https://github.com/anmolarora1/em/blob/9af867e/src/components/ModalComponent.tsx#L97">src/components/ModalComponent.tsx:97</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Element</span></h4>
@@ -774,14 +838,14 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 					<a name="setstate" class="tsd-anchor"></a>
 					<h3>set<wbr>State</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>State&lt;K&gt;<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>prevState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span>, props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_.html#connected" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>State&lt;K&gt;<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>prevState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span>, props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types.connected.html" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="components.modalcomponent.modalcomponent.html">ModalComponent</a>.<a href="components.modalcomponent.modalcomponent.html#setstate">setState</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/react/index.d.ts:485</li>
+									<li>Defined in node_modules/@types/react/index.d.ts:486</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -793,7 +857,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>prevState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span>, props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_.html#connected" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span></h5>
+									<h5>state: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>prevState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span>, props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types.connected.html" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></h5>
@@ -807,14 +871,14 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 					<a name="shouldcomponentupdate" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> should<wbr>Component<wbr>Update</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">should<wbr>Component<wbr>Update<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_.html#connected" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, nextState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span>, nextContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">should<wbr>Component<wbr>Update<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types.connected.html" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, nextState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span>, nextContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="components.modalcomponent.modalcomponent.html">ModalComponent</a>.<a href="components.modalcomponent.modalcomponent.html#shouldcomponentupdate">shouldComponentUpdate</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/react/index.d.ts:630</li>
+									<li>Defined in node_modules/@types/react/index.d.ts:631</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -830,7 +894,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>nextProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_.html#connected" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>nextProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types.connected.html" class="tsd-signature-type">Connected</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-signature-type">ModalProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>nextState: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h5>
@@ -869,7 +933,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 								<a href="components.modalcomponent.modalcomponent.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="components.modalcomponent.modalcomponent.html#close" class="tsd-kind-icon">close</a>
+								<a href="components.modalcomponent.modalcomponent.html#animateandclose" class="tsd-kind-icon">animate<wbr>And<wbr>Close</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="components.modalcomponent.modalcomponent.html#context" class="tsd-kind-icon">context</a>
@@ -901,6 +965,12 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="components.modalcomponent.modalcomponent.html#unsafe_componentwillupdate" class="tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Update</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="components.modalcomponent.modalcomponent.html#close" class="tsd-kind-icon">close</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="components.modalcomponent.modalcomponent.html#complete" class="tsd-kind-icon">complete</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="components.modalcomponent.modalcomponent.html#componentdidcatch" class="tsd-kind-icon">component<wbr>Did<wbr>Catch</a>
 							</li>
@@ -922,6 +992,9 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="components.modalcomponent.modalcomponent.html#componentwillupdate" class="tsd-kind-icon">component<wbr>Will<wbr>Update</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="components.modalcomponent.modalcomponent.html#endtutorial" class="tsd-kind-icon">end<wbr>Tutorial</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="components.modalcomponent.modalcomponent.html#forceupdate" class="tsd-kind-icon">force<wbr>Update</a>
 							</li>
@@ -941,6 +1014,9 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/components.modalcomponent.modalactionhelpers.html" class="tsd-kind-icon">Modal<wbr>Action<wbr>Helpers</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/components.modalcomponent.modalprops.html" class="tsd-kind-icon">Modal<wbr>Props</a>
 					</li>
@@ -963,7 +1039,6 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
-				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
